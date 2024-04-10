@@ -1,0 +1,41 @@
+/** @format */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	overflow-x: hidden;
+	color: #01ee01;
+	background-color: #222;
+}
+
+#root {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+main {
+	padding: 4rem;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 55vw 35vw;
+	gap: 3rem;
+	justify-content: center;
+	align-items: space-between;
+}
+
+::selection {
+	background-color: #01ee01;
+	color: #222;
+}
